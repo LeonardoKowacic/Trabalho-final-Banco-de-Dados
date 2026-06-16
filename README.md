@@ -5,9 +5,9 @@ Disciplina: Banco de Dados 1 - Prof. Alvaro Gianni Pagliari
 Trabalho integrado com Programacao 1 e Engenharia de Software.
 
 ## Integrantes
-- Jackson Michel Hillesheim Florêncio
-- <preencher>
-- <preencher>
+- Jackson Michel Hillesheim Florencio
+- Leonardo Kowacic
+- João Marcos Stahl
 
 ## Descricao do modulo
 Modulo responsavel pelo cadastro e consulta de profissionais de saude. Fornece dados para os modulos de Agenda (G3) e Consultas (G4); nao consome nenhum modulo.
@@ -43,14 +43,13 @@ Pre-requisito: PostgreSQL 16+.
    CREATE DATABASE clinica;
    ```
 2. Rode o script (escolha uma opcao):
-   - **pgAdmin:** Query Tool conectado ao banco -> abrir `g2_profissionais_saude.sql` -> F5.
+   - **pgAdmin:** Query Tool conectado ao banco -> abrir `trabalho_final.sql` -> F5.
    - **psql:**
      ```bash
-     psql -d clinica -f g2_profissionais_saude.sql
+     psql -d clinica -f trabalho_final.sql
      ```
 
 O script comeca com um bloco `DROP ... IF EXISTS`, entao pode ser executado quantas vezes quiser sem erro. Ao final, ele ja insere dados de exemplo e roda as consultas que demonstram o uso da view, da procedure e da trigger.
 
 ## Arquivos
-- `g2_profissionais_saude.sql` - schema completo + dados de demonstracao.
-- `diagrama_fisico.png` - diagrama fisico (exportado do pgAdmin).
+- `trabalho_final.sql` - schema completo (tabelas, view, procedure, trigger) + dados de demonstracao.
